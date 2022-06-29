@@ -67,6 +67,18 @@ public class Main {
 
     }
 
+    public static int index(int[] arr){
+
+        return Arrays.binarySearch(arr, 5);
+    }
+
+    public static Set uniq(int[] arr){
+        Set<Integer> integers = new HashSet<>();
+        for (int i : arr)
+            integers.add(i);
+
+        return integers;
+    }
 
 
 
@@ -85,13 +97,11 @@ public class Main {
 
         print(cArr);
 
-        System.out.println(5 + " sayısı  " + Arrays.binarySearch(cArr, 5)+". indexte.");
+        System.out.println(5 + " sayısı  " + index(cArr) +". indexte.");
 
-        Set<Integer> integers = new HashSet<>();
-        for (int i : cArr)
-            integers.add(i);
 
-        System.out.println("Tekrarsız : " + integers);
+
+        System.out.println("Tekrarsız : " + uniq(cArr));
 
     }
 }
