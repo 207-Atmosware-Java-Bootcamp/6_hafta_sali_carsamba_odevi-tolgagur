@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class Pazartesi {
 
 
     private static int size;
